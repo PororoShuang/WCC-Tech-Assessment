@@ -31,13 +31,17 @@ public class PostalCodeServiceImpl {
 
 	
     public PostalCodeResponse callCalculateDistance(String postalCode1 , String postalCode2) {
-    	List<Double> locationResult = locationLookup(postalCode1,postalCode2);
-    	Double calculatedDistance = calculateDistance(locationResult.get(0),locationResult.get(1),locationResult.get(2),locationResult.get(3));
-    	PostalCodeResponse response = new PostalCodeResponse(postalCode1,postalCode2,locationResult.get(0),locationResult.get(1),locationResult.get(2),locationResult.get(3),calculatedDistance,"km");
-    	logger.info(CODE_OUTPUT_MARKER,"===================================================================================");
-    	logger.info(CODE_OUTPUT_MARKER,"Request - PostalCodes1: "+postalCode1+", PostalCodes2: "+postalCode2);
-    	logger.info(CODE_OUTPUT_MARKER,"Response - " + response);
-    	logger.info(CODE_OUTPUT_MARKER,"===================================================================================");
+    	PostalCodeResponse response = new PostalCodeResponse();
+    	Double calculatedDistance;
+
+    		List<Double> locationResult = locationLookup(postalCode1,postalCode2);
+	    	calculatedDistance = calculateDistance(locationResult.get(0),locationResult.get(1),locationResult.get(2),locationResult.get(3));
+			response = new PostalCodeResponse(postalCode1,postalCode2,locationResult.get(0),locationResult.get(1),locationResult.get(2),locationResult.get(3),calculatedDistance,"km");
+	    	logger.info(CODE_OUTPUT_MARKER,"===================================================================================");
+	    	logger.info(CODE_OUTPUT_MARKER,"Request - PostalCodes1: "+postalCode1+", PostalCodes2: "+postalCode2);
+	    	logger.info(CODE_OUTPUT_MARKER,"Response - " + response);
+	    	logger.info(CODE_OUTPUT_MARKER,"===================================================================================");
+
     	return response;
     }
 
@@ -62,13 +66,13 @@ public class PostalCodeServiceImpl {
 	    }
 
     private List<Double> locationLookup(String postcode1,String postcode2){
-    	List<Double> latitudeLongitude = new ArrayList<Double>();
+		List<Double> latitudeLongitude = new ArrayList<Double>();
     	if(postalCodeMap.containsKey(postcode1) && postalCodeMap.containsKey(postcode2)) {
     		latitudeLongitude.add(postalCodeMap.get(postcode1).getLatitude());
     		latitudeLongitude.add(postalCodeMap.get(postcode1).getLongitude());
     		latitudeLongitude.add(postalCodeMap.get(postcode2).getLatitude());
     		latitudeLongitude.add(postalCodeMap.get(postcode2).getLongitude());
-    	}
+    	}	    	
     	return latitudeLongitude;
     }
     
