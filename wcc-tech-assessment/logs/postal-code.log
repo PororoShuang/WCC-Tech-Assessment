@@ -1,0 +1,16 @@
+2024-09-01 03:36:21 INFO  c.w.w.p.PostalCodeController - ===================================================================================
+2024-09-01 03:36:21 INFO  c.w.w.p.PostalCodeController - Request - PostalCodes1: AB10 1XG, PostalCodes2: AB10 6RN
+2024-09-01 03:36:21 INFO  c.w.w.p.PostalCodeController - Response - PostalCodeResponse [postcode1=AB10 1XG, latitude1=57.144165, longitude1=-2.114848, postcode2=AB10 6RN, latitude2=57.13788, longitude2=-2.121487, distance=0.8055046803242125, unit=km]
+2024-09-01 03:36:21 INFO  c.w.w.p.PostalCodeController - ===================================================================================
+2024-09-01 17:07:29 INFO  c.w.w.p.PostalCodeController - ===================================================================================
+2024-09-01 17:07:29 INFO  c.w.w.p.PostalCodeController - Request - PostalCodes1: AB10 1XG, PostalCodes2: AB10 6RN
+2024-09-01 17:07:29 INFO  c.w.w.p.PostalCodeController - Response - PostalCodeResponse [postcode1=AB10 1XG, latitude1=57.144165, longitude1=-2.114848, postcode2=AB10 6RN, latitude2=57.13788, longitude2=-2.121487, distance=0.8055046803242125, unit=km]
+2024-09-01 17:07:29 INFO  c.w.w.p.PostalCodeController - ===================================================================================
+2024-09-01 17:47:22 INFO  c.w.w.p.PostalCodeController - ===================================================================================
+2024-09-01 17:47:22 INFO  c.w.w.p.PostalCodeController - Request - PostalCodes1: AB10 1XG, PostalCodes2: AB10 6RN
+2024-09-01 17:47:22 INFO  c.w.w.p.PostalCodeController - Response - PostalCodeResponse [postcode1=AB10 1XG, latitude1=57.144165, longitude1=-2.114848, postcode2=AB10 6RN, latitude2=57.13788, longitude2=-2.121487, distance=0.8055046803242125, unit=km]
+2024-09-01 17:47:22 INFO  c.w.w.p.PostalCodeController - ===================================================================================
+2024-09-01 18:21:28 INFO  c.w.w.p.PostalCodeController - ===================================================================================
+2024-09-01 18:21:28 INFO  c.w.w.p.PostalCodeController - Request - PostalCodes1: AB10 1XG, PostalCodes2: AB10 6RN
+2024-09-01 18:21:28 INFO  c.w.w.p.PostalCodeController - Response - PostalCodeResponse [postcode1=AB10 1XG, latitude1=57.144165, longitude1=-2.114848, postcode2=AB10 6RN, latitude2=57.13788, longitude2=-2.121487, distance=0.8055046803242125, unit=km]
+2024-09-01 18:21:28 INFO  c.w.w.p.PostalCodeController - ===================================================================================
