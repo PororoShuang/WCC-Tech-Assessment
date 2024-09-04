@@ -20,7 +20,7 @@ import com.sun.net.httpserver.HttpExchange;
 @Service 
 public class PostalCodeServiceImpl {
 	private static final double EARTH_RADIUS = 6371; // Radius in kilometers
-    private static final Logger logger = LoggerFactory.getLogger(PostalCodeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(PostalCodeServiceImpl.class);
     private static final Marker CODE_OUTPUT_MARKER = MarkerFactory.getMarker("APILOG");
 	private Map<String, PostalCodeModel> postalCodeMap = new HashMap<>();
 	
